@@ -1,0 +1,220 @@
+body {
+    background-color: #ffdcd1;
+    font-family: 'Times New Roman', Cambria, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #634d4d;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    main {
+        padding: 10px 0;
+    }
+    .centro-nav {
+        margin: 10px auto;
+        max-width: none;
+    }
+    .centro-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .centro-nav li {
+        display: block;
+        margin: 10px 0;
+        max-width: none;
+    }
+    .centro-nav a {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 0.5rem;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    section.imagen img {
+        width: 100%;
+    }
+    section.imagenes img{
+        width:30%;
+    }
+    footer{
+        padding:10px 0;
+        margin:10px 0;
+
+    }
+}
+
+header {
+    background-color: #ff9393;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    background-color: #ff6961;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffb6c1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.centro-nav {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centro-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centro-nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centro-nav a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #ff6961;
+    border: 1px solid #ff6961;
+    border-radius: 0.25rem;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centro-nav a:hover {
+    background-color: #ff2626;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #634d4d;
+}
+
+footer {
+    background-color: #ff6961;
+    padding: 20px 0;
+    border-top: 1px solid #ffb6c1;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+section{
+    padding: 20px;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+form label{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #634d4d; 
+}
+
+form select, form textarea, form input
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #634d4d; 
+    background-color: #ffdcd1; 
+    background-clip: padding-box;
+    border: 1px solid #b59494; 
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+section.imagen img{
+    width: 30%;
+    max-width: 500px;
+    height: auto;
+}
+section.imagenes{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+section.imagenes img{
+    width: 15%;
+}
+section.mejores {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+section.mejores img{
+    width:50%;
+}
+div img{ 
+    width:100%
+}
+.imagen-ampliada {
+    transform: scale(2); /* Cambia el valor para ajustar el nivel de aumento */
+    transition: transform 0.3s ease; /* Agrega una transición suave para hacer la animación */
+}
+
+/* Estilos para las estrellas */
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 25px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+/* Estilos para la valoración */
+.valoracion {
+    text-align: center;
+}

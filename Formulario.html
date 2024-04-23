@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="centro-nav">
+        <ul>
+            <li><a href="index.html" class="Index">Index</a></li>
+            <li><a href="Recetasaladas.html" class="Recetas saladas">Recetas saladas</a></li>
+            <li><a href="Recetasdulces.html" class="Recetas dulces">Recetas dulces</a></li>
+            <li><a href="Vídeos.html" class="Vídeos">Vídeos</a></li>
+            <li><a href="Formulario.html" class="Formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Formulario</h1>
+        <h2>Formulario de preguntas y comentarios</h2>
+        <p>¡Gracias por participar en nuestra encuesta de preguntas y respuestas! Tu opinión es muy importante para nosotros. Por favor, tómate un momento para responder algunas preguntas breves y ayudarnos a mejorar nuestros servicios.</p>
+        <p>Tus respuestas son totalmente anónimas y nos ayudarán a entender mejor las necesidades y preferencias de nuestra comunidad. </p>
+        <p>¡Gracias por tu colaboración!</p>
+    </header>
+
+    <section id="comentarios">
+        <h2>Comentarios y Valoraciones</h2>
+        <div id="lista-comentarios">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+        <form id="formulario-comentario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" required></textarea>
+            <div class="valoracion">
+                <label for="valoracion">Valoración:</label>
+                <div class="stars">
+                    <input type="radio" name="valoracion" id="star5" value="5"><label for="star5" title="5 estrellas">&#9733;</label>
+                    <input type="radio" name="valoracion" id="star4" value="4"><label for="star4" title="4 estrellas">&#9733;</label>
+                    <input type="radio" name="valoracion" id="star3" value="3"><label for="star3" title="3 estrellas">&#9733;</label>
+                    <input type="radio" name="valoracion" id="star2" value="2"><label for="star2" title="2 estrellas">&#9733;</label>
+                    <input type="radio" name="valoracion" id="star1" value="1"><label for="star1" title="1 estrella">&#9733;</label>
+                </div>
+            </div>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Formulario de contacto</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" name="name" id="name" placeholder="Nombre y Apellidos" required>
+            <br>
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="dudas_ingredientes">Dudas de ingredientes</option>
+                <option value="dudas_receta">Dudas de receta</option>
+                <option value="otros">Otros</option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Correo electrónico: recetasdelabuela@gmail.com</p>
+        <p>Recetas de la abuela</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
